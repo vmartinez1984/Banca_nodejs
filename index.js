@@ -24,9 +24,7 @@ app.get("/", (req, res) => {
 
 app.use('/api/clientes', clienteRouter)
 
-
-const { errorMiddleware } = require('./middlewares')
-app.use(errorMiddleware.cacharError)
+app.use(require('./middlewares/error.middleware').cacharError)
 
 app.listen(port, () => {
     console.log("http://localhost:" + port)
