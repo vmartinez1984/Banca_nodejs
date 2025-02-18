@@ -1,3 +1,7 @@
 const clienteRepository = require('./cliente.repositorio')
+const ahorroRepository = require('./ahorro.repository')
 
-module.exports = { clienteRepository }
+module.exports = { 
+    clienteRepository, 
+    ahorroRepository 
+}

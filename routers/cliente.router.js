@@ -9,4 +9,6 @@ const { clienteController } = require('../controllers')
 
 router.post('/', clienteMiddleware.validarCliente, clienteController.agregarCliente)
 
+router.get('/:id', clienteController.obtenerClientePorIdEncodedKeyAsync)
+
 module.exports = router

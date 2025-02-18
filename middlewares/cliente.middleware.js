@@ -5,7 +5,7 @@ const validarCliente = (req, res, next) => {
           mensaje: "El nombre es requerido",
         });
       }
-      if (req.body.apellidos == undefined || req.body.apellidos == "") {
+      if (req.body.primerApellido == undefined || req.body.primerApellido == "") {
         res.status(400).json({
           mensaje: "Los apellidos son requeridos",
         });

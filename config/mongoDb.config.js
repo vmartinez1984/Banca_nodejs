@@ -29,11 +29,14 @@ async function conectarAMongoDb() {
     try {
         await client.connect();
         //console.log("✅ Conectado a MongoDB");
-        return client.db("PuntoDeVenta"); // Cambia el nombre de la base de datos
+        return client.db("Banca"); // Cambia el nombre de la base de datos
     } catch (error) {
         console.error("❌ Error de conexión:", error);
         process.exit(1);
     }
 }
 
-module.exports = { verificarConexionAMongoDb, conectarAMongoDb }
+module.exports = { 
+    verificarConexionAMongoDb, 
+    conectarAMongoDb 
+}

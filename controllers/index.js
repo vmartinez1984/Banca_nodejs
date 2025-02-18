@@ -1,3 +1,4 @@
-const clienteController = require('./cliente.controller')
+const clienteController = require("./cliente.controller");
+const ahorroController = require("./ahorro.controller");
 
-module.exports = { clienteController }
+module.exports = { clienteController, ahorroController };
